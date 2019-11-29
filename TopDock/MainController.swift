@@ -33,6 +33,11 @@ class MainController: NSViewController {
 //        collectionView.register(AppCollectionViewItem.classForCoder(), forSupplementaryViewOfKind: NSCollectionView.elementKindSectionFooter, withIdentifier: NSUserInterfaceItemIdentifier.init("AppCollectionViewFooter"))
     }
 
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        collectionView.reloadData()
+    }
+
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -54,10 +59,10 @@ extension MainController: NSCollectionViewDelegate, NSCollectionViewDataSource {
         cell.setData(app: runningApp[indexPath.item])
         return cell
     }
-    
-    
-    func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
-        print(indexPaths)
-    }
+//
+//
+//    func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
+//        print(indexPaths)
+//    }
 }
 

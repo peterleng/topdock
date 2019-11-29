@@ -17,12 +17,12 @@ class AppCollectionViewItem: NSCollectionViewItem {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        view.layer?.backgroundColor = NSColor.lightGray.cgColor
+        view.layer?.backgroundColor = NSColor.clear.cgColor
     }
     
     override func viewWillAppear() {
         super.viewWillAppear()
-        view.layer?.backgroundColor = NSColor.lightGray.cgColor
+        view.layer?.backgroundColor = NSColor.clear.cgColor
     }
     
     
