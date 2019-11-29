@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BC61A541238FD56900623C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC61A540238FD56900623C16 /* AppDelegate.swift */; };
-		BC61A543238FD56900623C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC61A542238FD56900623C16 /* ViewController.swift */; };
+		BC61A543238FD56900623C16 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC61A542238FD56900623C16 /* MainController.swift */; };
 		BC61A545238FD56B00623C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC61A544238FD56B00623C16 /* Assets.xcassets */; };
 		BC61A548238FD56B00623C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC61A546238FD56B00623C16 /* Main.storyboard */; };
+		BC66A37F2390DDA100D7E03A /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A37E2390DDA100D7E03A /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC61A53D238FD56900623C16 /* TopDock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopDock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC61A540238FD56900623C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC61A542238FD56900623C16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC61A542238FD56900623C16 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		BC61A544238FD56B00623C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC61A547238FD56B00623C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC61A549238FD56B00623C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC61A54A238FD56B00623C16 /* TopDock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TopDock.entitlements; sourceTree = "<group>"; };
+		BC66A37E2390DDA100D7E03A /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +56,12 @@
 			isa = PBXGroup;
 			children = (
 				BC61A540238FD56900623C16 /* AppDelegate.swift */,
-				BC61A542238FD56900623C16 /* ViewController.swift */,
+				BC61A542238FD56900623C16 /* MainController.swift */,
 				BC61A544238FD56B00623C16 /* Assets.xcassets */,
 				BC61A546238FD56B00623C16 /* Main.storyboard */,
 				BC61A549238FD56B00623C16 /* Info.plist */,
 				BC61A54A238FD56B00623C16 /* TopDock.entitlements */,
+				BC66A37E2390DDA100D7E03A /* EventMonitor.swift */,
 			);
 			path = TopDock;
 			sourceTree = "<group>";
@@ -133,7 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC61A543238FD56900623C16 /* ViewController.swift in Sources */,
+				BC66A37F2390DDA100D7E03A /* EventMonitor.swift in Sources */,
+				BC61A543238FD56900623C16 /* MainController.swift in Sources */,
 				BC61A541238FD56900623C16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +206,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -256,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -279,6 +283,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.topdock.bar.TopDock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,6 +304,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.topdock.bar.TopDock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
