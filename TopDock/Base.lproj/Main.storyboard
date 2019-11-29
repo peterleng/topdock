@@ -31,20 +31,21 @@
                         <subviews>
                             <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-Ai-gre">
                                 <rect key="frame" x="0.0" y="0.0" width="650" height="380"/>
-                                <clipView key="contentView" copiesOnScroll="NO" id="dwI-PU-2hV">
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="dwI-PU-2hV">
                                     <rect key="frame" x="1" y="1" width="648" height="378"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView id="yBj-Ey-cse">
+                                        <collectionView selectable="YES" id="yBj-Ey-cse">
                                             <rect key="frame" x="0.0" y="0.0" width="648" height="158"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="9" minimumLineSpacing="10" id="9Oc-7U-y28">
-                                                <size key="itemSize" width="80" height="80"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="2" minimumLineSpacing="2" id="9Oc-7U-y28">
+                                                <size key="itemSize" width="86" height="86"/>
                                                 <edgeInsets key="sectionInset" left="10" right="10" top="10" bottom="10"/>
                                             </collectionViewFlowLayout>
-                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="primaryBackgroundColor" red="0.61564086294416243" green="0.61564086294416243" blue="0.61564086294416243" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         </collectionView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.31093074515752894" green="0.35647563601853016" blue="0.43815434644670048" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pzt-ro-9GZ">
                                     <rect key="frame" x="1" y="144" width="233" height="15"/>

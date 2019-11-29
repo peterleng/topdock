@@ -16,11 +16,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Npg-no-gpR">
-                    <rect key="frame" x="216" y="209" width="48" height="48"/>
+                    <rect key="frame" x="19" y="33" width="48" height="48"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="48" id="qBR-I6-SZu"/>
                         <constraint firstAttribute="height" constant="48" id="w1f-r4-PUW"/>
@@ -28,19 +28,21 @@
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="L0o-0i-PeR"/>
                 </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tXa-rc-uYn">
-                    <rect key="frame" x="238" y="178" width="4" height="16"/>
-                    <textFieldCell key="cell" lineBreakMode="clipping" id="CVb-I0-g9Y">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                    <rect key="frame" x="-1" y="16" width="88" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="yZg-ag-367"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" alignment="center" id="CVb-I0-g9Y">
+                        <font key="font" metaFont="system" size="12"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="Npg-no-gpR" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="15" id="Okl-pH-n2T"/>
+                <constraint firstItem="Npg-no-gpR" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="Okl-pH-n2T"/>
                 <constraint firstItem="tXa-rc-uYn" firstAttribute="centerX" secondItem="Npg-no-gpR" secondAttribute="centerX" id="a8q-B7-C8c"/>
                 <constraint firstItem="Npg-no-gpR" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="dNB-4d-uDs"/>
-                <constraint firstItem="tXa-rc-uYn" firstAttribute="top" secondItem="Npg-no-gpR" secondAttribute="bottom" constant="15" id="xk3-tM-DtI"/>
+                <constraint firstItem="tXa-rc-uYn" firstAttribute="top" secondItem="Npg-no-gpR" secondAttribute="bottom" constant="2" id="xk3-tM-DtI"/>
             </constraints>
             <point key="canvasLocation" x="140" y="154"/>
         </customView>
