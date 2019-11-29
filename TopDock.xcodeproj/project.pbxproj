@@ -12,6 +12,8 @@
 		BC61A545238FD56B00623C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC61A544238FD56B00623C16 /* Assets.xcassets */; };
 		BC61A548238FD56B00623C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC61A546238FD56B00623C16 /* Main.storyboard */; };
 		BC66A37F2390DDA100D7E03A /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A37E2390DDA100D7E03A /* EventMonitor.swift */; };
+		BC66A3842390EED500D7E03A /* AppCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC66A3822390EED500D7E03A /* AppCollectionViewItem.swift */; };
+		BC66A3852390EED500D7E03A /* AppCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC66A3832390EED500D7E03A /* AppCollectionViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		BC61A549238FD56B00623C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC61A54A238FD56B00623C16 /* TopDock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TopDock.entitlements; sourceTree = "<group>"; };
 		BC66A37E2390DDA100D7E03A /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		BC66A3822390EED500D7E03A /* AppCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewItem.swift; sourceTree = "<group>"; };
+		BC66A3832390EED500D7E03A /* AppCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppCollectionViewItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				BC61A549238FD56B00623C16 /* Info.plist */,
 				BC61A54A238FD56B00623C16 /* TopDock.entitlements */,
 				BC66A37E2390DDA100D7E03A /* EventMonitor.swift */,
+				BC66A3822390EED500D7E03A /* AppCollectionViewItem.swift */,
+				BC66A3832390EED500D7E03A /* AppCollectionViewItem.xib */,
 			);
 			path = TopDock;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC61A545238FD56B00623C16 /* Assets.xcassets in Resources */,
+				BC66A3852390EED500D7E03A /* AppCollectionViewItem.xib in Resources */,
 				BC61A548238FD56B00623C16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC66A37F2390DDA100D7E03A /* EventMonitor.swift in Sources */,
+				BC66A3842390EED500D7E03A /* AppCollectionViewItem.swift in Sources */,
 				BC61A543238FD56900623C16 /* MainController.swift in Sources */,
 				BC61A541238FD56900623C16 /* AppDelegate.swift in Sources */,
 			);
