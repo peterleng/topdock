@@ -28,46 +28,58 @@
                     <view key="view" translatesAutoresizingMaskIntoConstraints="NO" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="650" height="210"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-Ai-gre">
+                            <visualEffectView blendingMode="behindWindow" material="light" state="active" translatesAutoresizingMaskIntoConstraints="NO" id="7C7-uH-Crf">
                                 <rect key="frame" x="0.0" y="0.0" width="650" height="210"/>
-                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="dwI-PU-2hV">
-                                    <rect key="frame" x="1" y="1" width="648" height="208"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <collectionView selectable="YES" id="yBj-Ey-cse">
-                                            <rect key="frame" x="0.0" y="0.0" width="648" height="208"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="1" minimumLineSpacing="1" id="9Oc-7U-y28">
-                                                <size key="itemSize" width="86" height="86"/>
-                                                <edgeInsets key="sectionInset" left="10" right="10" top="10" bottom="10"/>
-                                            </collectionViewFlowLayout>
-                                            <color key="primaryBackgroundColor" red="0.61564086294416243" green="0.61564086294416243" blue="0.61564086294416243" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </collectionView>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.31093074515752894" green="0.35647563601853016" blue="0.43815434644670048" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pzt-ro-9GZ">
-                                    <rect key="frame" x="-100" y="-100" width="233" height="15"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="9ir-OS-AGJ">
-                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
+                                <subviews>
+                                    <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-Ai-gre">
+                                        <rect key="frame" x="0.0" y="0.0" width="650" height="210"/>
+                                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="dwI-PU-2hV">
+                                            <rect key="frame" x="1" y="1" width="648" height="208"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <collectionView selectable="YES" id="yBj-Ey-cse">
+                                                    <rect key="frame" x="0.0" y="0.0" width="648" height="208"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="1" minimumLineSpacing="1" id="9Oc-7U-y28">
+                                                        <size key="itemSize" width="86" height="86"/>
+                                                        <edgeInsets key="sectionInset" left="10" right="10" top="10" bottom="10"/>
+                                                    </collectionViewFlowLayout>
+                                                    <color key="primaryBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </collectionView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pzt-ro-9GZ">
+                                            <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="9ir-OS-AGJ">
+                                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xdO-Ai-gre" secondAttribute="trailing" id="7tX-yb-XiE"/>
+                                    <constraint firstItem="xdO-Ai-gre" firstAttribute="top" secondItem="7C7-uH-Crf" secondAttribute="top" id="CSR-Bc-J5c"/>
+                                    <constraint firstAttribute="bottom" secondItem="xdO-Ai-gre" secondAttribute="bottom" id="IKP-bN-9NH"/>
+                                    <constraint firstItem="xdO-Ai-gre" firstAttribute="leading" secondItem="7C7-uH-Crf" secondAttribute="leading" id="iml-oC-4Br"/>
+                                </constraints>
+                            </visualEffectView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="width" constant="650" id="0wa-lI-u2h"/>
-                            <constraint firstAttribute="trailing" secondItem="xdO-Ai-gre" secondAttribute="trailing" id="BAB-Su-zOl"/>
+                            <constraint firstItem="7C7-uH-Crf" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="75W-CW-qBN"/>
+                            <constraint firstAttribute="trailing" secondItem="7C7-uH-Crf" secondAttribute="trailing" id="Flp-c2-9en"/>
+                            <constraint firstItem="7C7-uH-Crf" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="aXC-zN-ifm"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="efp-kb-Let"/>
-                            <constraint firstAttribute="bottom" secondItem="xdO-Ai-gre" secondAttribute="bottom" id="fYp-O9-O1p"/>
-                            <constraint firstItem="xdO-Ai-gre" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="fmw-77-6Fo"/>
-                            <constraint firstItem="xdO-Ai-gre" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="ryd-dI-F8Q"/>
+                            <constraint firstAttribute="bottom" secondItem="7C7-uH-Crf" secondAttribute="bottom" id="nOd-NS-y1R"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="yBj-Ey-cse" id="MXp-fx-Kc4"/>
                         <outlet property="flowLayout" destination="9Oc-7U-y28" id="R52-Kw-zJN"/>
+                        <outlet property="visualEffectView" destination="7C7-uH-Crf" id="lRe-wS-X13"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -12,6 +12,7 @@ fileprivate let itemIdentifier = "AppCollectionViewItem"
 
 class MainController: NSViewController {
 
+    @IBOutlet weak var visualEffectView: NSVisualEffectView!
     @IBOutlet weak var collectionView: NSCollectionView!
 
     @IBOutlet weak var flowLayout: NSCollectionViewFlowLayout!
@@ -27,10 +28,15 @@ class MainController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let _screen = NSScreen.main {
+            if let imageURL = NSWorkspace.shared.desktopImageURL(for: _screen) {
+                visualEffectView.maskImage = NSImage.init(contentsOf: imageURL)
+            }
+        }
+
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(AppCollectionViewItem.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier.init(itemIdentifier))
-//        collectionView.register(AppCollectionViewItem.classForCoder(), forSupplementaryViewOfKind: NSCollectionView.elementKindSectionFooter, withIdentifier: NSUserInterfaceItemIdentifier.init("AppCollectionViewFooter"))
     }
 
     override func viewWillAppear() {
