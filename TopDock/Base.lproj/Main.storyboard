@@ -25,20 +25,19 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController storyboardIdentifier="MainController" id="XfG-lQ-9wD" customClass="MainController" customModule="TopDock" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="650" height="380"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <view key="view" translatesAutoresizingMaskIntoConstraints="NO" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="650" height="210"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-Ai-gre">
-                                <rect key="frame" x="0.0" y="0.0" width="650" height="380"/>
+                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdO-Ai-gre">
+                                <rect key="frame" x="0.0" y="0.0" width="650" height="210"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="dwI-PU-2hV">
-                                    <rect key="frame" x="1" y="1" width="648" height="378"/>
+                                    <rect key="frame" x="1" y="1" width="648" height="208"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView selectable="YES" id="yBj-Ey-cse">
-                                            <rect key="frame" x="0.0" y="0.0" width="648" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="648" height="208"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="2" minimumLineSpacing="2" id="9Oc-7U-y28">
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="1" minimumLineSpacing="1" id="9Oc-7U-y28">
                                                 <size key="itemSize" width="86" height="86"/>
                                                 <edgeInsets key="sectionInset" left="10" right="10" top="10" bottom="10"/>
                                             </collectionViewFlowLayout>
@@ -48,7 +47,7 @@
                                     <color key="backgroundColor" red="0.31093074515752894" green="0.35647563601853016" blue="0.43815434644670048" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pzt-ro-9GZ">
-                                    <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                    <rect key="frame" x="-100" y="-100" width="233" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="9ir-OS-AGJ">
@@ -58,7 +57,9 @@
                             </scrollView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="width" constant="650" id="0wa-lI-u2h"/>
                             <constraint firstAttribute="trailing" secondItem="xdO-Ai-gre" secondAttribute="trailing" id="BAB-Su-zOl"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="efp-kb-Let"/>
                             <constraint firstAttribute="bottom" secondItem="xdO-Ai-gre" secondAttribute="bottom" id="fYp-O9-O1p"/>
                             <constraint firstItem="xdO-Ai-gre" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="fmw-77-6Fo"/>
                             <constraint firstItem="xdO-Ai-gre" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="ryd-dI-F8Q"/>
